@@ -22,7 +22,8 @@ TNode::TNode() {
 	right = NULL;
 	parent = NULL;
 	height = 1;
-	person = new PersonInf(sarr); // updated
+	string sarr[]= {"Ben", "Sobota", "20"};
+	person = new PersonInf(sarr);
 }
 TNode::~TNode(){
 	cout <<"Deleting "<<person->first<<","<<person->last<<endl;
