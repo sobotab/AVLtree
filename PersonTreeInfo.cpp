@@ -24,7 +24,7 @@ void PersonTreeInfo::Interface() {
 	char c = 'a';
 	while (c != 'q') {
 		cout <<endl<<"****************************************************"<<endl;
-		cout <<"Choose Option:\n  a\tGet Student\n  b\tadd a person\n  c\tremove a person\n  d\tprint tree\n  q\tquit"<< endl;
+		cout <<"Choose Option:\n  a\tGet Person\n  b\tadd a person\n  c\tremove a person\n  d\tprint tree\n  q\tquit"<< endl;
 		cin >> c;
 		switch (c) {
 		case 'a': {
@@ -110,7 +110,7 @@ void PersonTreeInfo::Interface() {
 string PersonTreeInfo::strip(string s, string sarr[]) {
 	const char* WhiteSpace = " \t\v\r\n";
 	const char* EndChar = ":\t\n";
-	for (int i = 0; i < 6; i++) {
+	for (int i = 0; i < 3; i++) {
 		size_t start = s.find_first_not_of(WhiteSpace);
 		int len = s.length();
 		s = s.substr(start,len-start+1);
@@ -120,14 +120,14 @@ string PersonTreeInfo::strip(string s, string sarr[]) {
 			s = s.substr(end+1, len-end);
 		}
 	}
-	return sarr[5];
+	return sarr[3];
 
 }
 void PersonTreeInfo::readFile() {
 	ifstream file(fn.c_str());
 	string word;
 	string phrase;
-	string sarr[6];
+	string sarr[3];
 	file >> word;
 	while (!file.eof()) {
 		file >> word;

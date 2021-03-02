@@ -13,10 +13,12 @@ using namespace std;
 PersonInf::PersonInf() {
 	first="Ben";
 	last="Sobota";
+	age=20;
 }
 
 PersonInf::PersonInf(string sarr[]) {
 	first=sarr[0];
 	last=sarr[1];
+	age=sarr[2];
 }
 

@@ -18,6 +18,7 @@ class PersonInf {
 	friend class BST;
 	string first;
 	string last;
+	string age;
 	int numstuff = 6;
 public:
 	PersonInf();
