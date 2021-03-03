@@ -128,14 +128,22 @@ void PersonTreeInfo::readFile() {
 	string word;
 	string phrase;
 	string sarr[3];
-	file >> word;
-	while (!file.eof()) {
-		file >> word;
+	//file >> word;
+	if (file.is_open()) {
+		while (getline(file, phrase)) {
+			phrase=strip(phrase, sarr);
+			tree->insert(sarr);
+		}
+		file.close();
+	} else {
+		cout << "Unable to open file" << endl;
+	}
+	/*while (!file.eof()) {
 		getline(file,phrase);
 		phrase = strip(phrase, sarr);
 			tree->insert(sarr);
-		file >> word;
-	}
+		//file >> word;
+	}*/
 	tree->printTreeIO();
 	return;
 }

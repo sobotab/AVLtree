@@ -1,5 +1,10 @@
-Sobota Benjamin 20
-Sydney Millman 21
-Joe Shmoe 25
-Jane Doe 42
-John Hancock 1
+	 Benjamin 	Sobota	 20
+	 University 	Delaware	 250
+	 Beach 	Patrol	 5
+	 CS++ 	Club	 2
+	 Computing	 Machinery	 2
+	 Computer 	Science 	2
+	 Coding 	Projects 	2
+	 John 	Doe	 5
+	 Jane 	Doe 	5
+	 AV 	L 	12
